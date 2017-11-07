@@ -2,52 +2,53 @@
 
 import UIKit
 
-//implicitly declaring variables...
-let thisConstant = 42   //'let' used to declare constants
-var thisVariable = 42   //'let' used to declare variables (Like JS)
+print("Arrays")
+print("------")
+//Creating arrays...
+var shoppingList = ["catfish", "water", "tulips", "blue paint"]
+shoppingList[1] = "water bottle"
+print(shoppingList)
 
-print("Implicit Variables")
-print("------------------")
-print("thisVariable = ", thisVariable)  // , comma used for concatenating
+var occupations = [
+    "Malcolm": "Captain",
+    "Kaylee": "Mechanic",
+]
+occupations["Jayne"] = "Public Relations"
+print(occupations)
+
+//Creating empty arrays...
+let emptyArray = [String]()
+let emptyDictionary = [String: Float]()
+//Emptying populated arrays...
+shoppingList = []
+occupations = [:]
+
+print(shoppingList)
+print(occupations)
 print("\n")
 
-//explicitly declaring variables...
-let implicitInt = 70
-let implicitDouble = 70.0
-let explicitDouble: Double = 70 //this syntax to explicitly declares datatypes
-let explicitFloat: Float = 70
+//if, switch statements
+//for-in, while, repeat-while loops
 
-print("Explicit Variables")
-print("------------------")
-print("explicitDouble = ", explicitDouble)
-print("explicitFloat = ", explicitFloat)
+let individualScores = [75, 43, 103, 87, 12]
+var teamScore = 0
+
+print("Conditional Statements and Loops")
+print("--------------------------------")
+print("Before loop: teamScore = \(teamScore)")
+
+for score in individualScores{
+    if score > 50
+    {
+        teamScore += 3
+    }
+    else
+    {
+        teamScore += 1
+    }
+}
+
+print("After loop: teamScore = \(teamScore)")
 print("\n")
 
-//converting datatypes
-//can only be done explicitly...
-let label = "The width is " //implicit string
-let width = 94  //implicit integer
-let widthLabel = label + String(width)  //converting/parsing width to string using String()...
-
-print("Converting Datatypes")
-print("--------------------")
-print(widthLabel)
-print("\n")
-
-//easier ways to include values in strings
-let apples = 3
-let oranges = 5
-let appleSummary = "I have \(apples) apples."
-let fruitSummary = "I have \(apples + oranges) pieces of fruit."
-
-//experiment
-let height = 5.10
-let fName = "Tyrone"
-let greeting = "\(fName) is \(height) ft tall."
-
-print("Including Values in Strings")
-print("---------------------------")
-print(appleSummary)
-print(fruitSummary)
-print(greeting)
 
