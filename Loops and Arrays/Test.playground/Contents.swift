@@ -26,29 +26,3 @@ occupations = [:]
 print(shoppingList)
 print(occupations)
 print("\n")
-
-//if, switch statements
-//for-in, while, repeat-while loops
-
-let individualScores = [75, 43, 103, 87, 12]
-var teamScore = 0
-
-print("Conditional Statements and Loops")
-print("--------------------------------")
-print("Before loop: teamScore = \(teamScore)")
-
-for score in individualScores{
-    if score > 50
-    {
-        teamScore += 3
-    }
-    else
-    {
-        teamScore += 1
-    }
-}
-
-print("After loop: teamScore = \(teamScore)")
-print("\n")
-
-
